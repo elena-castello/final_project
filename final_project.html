@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Meerkat Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+  integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+  crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+  integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+  crossorigin=""></script>
+
+  <link rel = "stylesheet" href= "styles/styles.css">
+	</head>
+<body>
+
+ <div id="wrapper">
+<h1>Elena's Final Project</h1>
+ <div id="mapid"></div>
+</div>
+
+<script src="scripts/cities.json"></script>
+
+ <script>
+
+ var mymap = L.map('mapid').setView([27.718,24.245], 1.9);
+ L.tileLayer('https://api.mapbox.com/styles/v1/elenac329/cja9td0d31tlo2rq74q44mmmf/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZWxlbmFjMzI5IiwiYSI6ImNqOXoyOTR2ZzFkbG8yd21kaDJyZ3N4MHIifQ.S30d1ADGfExMnlQP8zWwiQ', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18
+}).addTo(mymap);
+
+for ( var i=0; i < places.length; i++ ) {
+  L.marker( [places[i].latitude, places[i].longitude])
+  .bindPopup( '<h3>' + places[i].name + '</h3>' + '<p>' + places[i].description + '</p>')
+  .addTo( mymap );
+}
+</script>
+
+<div id ="Spain">
+<button type="button">What is the capital of Spain?</button>
+</div>
+
+<div id ="India">
+<button type="button">What is the main purpose of the Taj Mahal?</button>
+</div>
+
+<div id ="Florida">
+<button type="button">What is the largest city in the US by area?</button>
+</div>
+
+<div id ="Mexico">
+<button type="button">What is the main square in Mexico City called?</button>
+</div>
+
+<div id ="Turkey">
+<button type="button">What is the official currency of Turkey?</button>
+</div>
+
+<div id ="South Africa">
+<button type="button">What is the southernmost point of the African continent?</button>
+</div>
+
+<div id ="England">
+<button type="England">Which castle is the oldest and longest-inhabited in the world?</button>
+</div>
+
+<div id ="China">
+<button type="button">What was required to enter the Forbidden City?</button>
+</div>
+
+<div id ="Israel">
+<button type="button">What is the Western Wall made of?</button>
+</div>
+
+<div id ="Poland">
+<button type="button">Which concentration camp from WWII is closest to the city of Krakow?</button>
+</div>
+
+
+</body>
+
+</html>
