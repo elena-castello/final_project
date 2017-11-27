@@ -1,27 +1,27 @@
 // jQuery hide()/show() example with a switch statement
 
-$(document).ready(function() {
+//$(document).ready(function() {
 
 
   // function to hide all divs
-  function hideAll() {
-    $('#SigoName').hide();
-    $('#MiGenteName').hide();
-    $('#SafariName').hide();
-    $('#GinzaName').hide();
-  }
+  //function hideAll() {
+    //$('#name1').hide();
+    //$('#name2').hide();
+    //$('#name3').hide();
+    //$('#name4').hide();
+  //}
 
   // run that function right away
-  hideAll();
+  //hideAll();
 
   // when any animal is clicked, make the suitable div appear
-  $('.cover').click(function() {
-    hideAll();
+  //$('.classname').click(function() {
+    //hideAll();
 
     // here is a switch statement - this was in Codecademy
     // "Control Flow" lesson 7
 
 
-  $("button").click(function() {
-    $('#Jfact').slideToggle();
-});
+  //$("button").click(function() {
+    //$('#name5').slideToggle();
+//});
