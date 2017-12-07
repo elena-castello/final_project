@@ -159,16 +159,14 @@ for ( var i=0; i < places.length; i++ ) {
     <div class="form-check"><label><input type="radio" name="number12" value="300+"> 300+</label></div>
 </div>
 </div>
+</div>
 
 
-<a href="#modalDialog" class="modalBtn" id="modalTrigger">Click me to open</a>
+<button id="modal-launcher">Launch Modal Window</button>
 
-<dialog class="modal" id="modalDialog" tabindex="-1">
-  <div>
-    <a href="#modalTrigger" class="close" aria-label="Close dialog">&times;</a>
-    <p>Hello Beautiful!</p>
-  </div>
-</dialog>
+<div id="modal-background"></div>
+<div id="modal-content">
+    <button id="modal-close">Close Modal Window</button>
 </div>
 
 <script

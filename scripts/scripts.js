@@ -3,6 +3,11 @@
 $(document).ready(function() {
   $(".form-group").hide();
 
+  $(function(){
+    $("#modal-launcher, #modal-background, #modal-close").click(function () {
+      $("#modal-content,#modal-background").toggleClass("active");
+    });
+  });
 
   $( ".myButton" ).click(function() {
     // if ( $(this).parent().children(".form-group").is(':visible') ) {
@@ -16,6 +21,7 @@ $(document).ready(function() {
     //     $('#form-group').show();
     //     break;
     //   }
+
 
 
 
