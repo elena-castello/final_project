@@ -16,6 +16,8 @@ $(document).ready(function() {
       // $(this).parent().children(".form-group").hide();
     // }
 
+
+
     // switch ($(this).attr("id")) {
     //   case "form-group":
     //     $('#form-group').show();
