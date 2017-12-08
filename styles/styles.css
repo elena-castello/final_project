@@ -25,6 +25,10 @@ h2 {
 	color: #2f2da8
 }
 
+#column {
+	float: left;
+}
+
 .myButton {
 	-moz-box-shadow:inset 0px 1px 0px 0px #16508a;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #16508a;
@@ -92,13 +96,48 @@ h2 {
 		-webkit-box-shadow: 0 0 20px 0 #222;
 		-moz-box-shadow: 0 0 20px 0 #222;
 		display: none;
-		height: 500px;
+		/* height: 500px; */
 		left: 50%;
 		margin: -120px 0 0 -160px;
 		padding: 10px;
 		position: relative;
 		top: 70%;
-		width: 500px;
+		/* width: 500px; */
+		z-index: 1000;
+		font-family: 'Esteban', serif;
+}
+
+#modal-background2 {
+		display: none;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: white;
+		opacity: .50;
+		-webkit-opacity: .5;
+		-moz-opacity: .5;
+		filter: alpha(opacity=50);
+		z-index: 1000;
+}
+
+#modal-content2 {
+		background-color: white;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		box-shadow: 0 0 20px 0 #222;
+		-webkit-box-shadow: 0 0 20px 0 #222;
+		-moz-box-shadow: 0 0 20px 0 #222;
+		display: none;
+		/* height: 500px; */
+		left: 50%;
+		margin: -120px 0 0 -160px;
+		padding: 10px;
+		position: relative;
+		top: 70%;
+		/* width: 500px; */
 		z-index: 1000;
 		font-family: 'Esteban', serif;
 }
@@ -111,7 +150,7 @@ h2 {
 	font-family: 'Esteban', serif;
 }
 
-#modal-luncher {
+#modal-launcher {
 font-family: 'Esteban', serif;
 }
 
@@ -160,6 +199,7 @@ font-family: 'Esteban', serif;
 }
 
 @media (max-width: 400px) {
-  #modal-background {
-    width: 100%;
+		modal-background {
+			max-width: 50%;
+}
   }

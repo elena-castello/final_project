@@ -12,22 +12,36 @@ $(document).ready(function() {
   $( ".myButton" ).click(function() {
     // if ( $(this).parent().children(".form-group").is(':visible') ) {
       $(this).parent().children(".form-group").toggle();
-    // } else {
-      // $(this).parent().children(".form-group").hide();
-    // }
+
+
+ //$('#modal-content').click(function(){
+   //if (madrid.checked) {
+     //$(this.).show("h2")
+  // } else {
+    // $(this.).show("h4")
+   //}
+ //});
 
 
 
-    // switch ($(this).attr("id")) {
-    //   case "form-group":
-    //     $('#form-group').show();
-    //     break;
-    //   }
+ $("#checkButton").click(function() {
+
+   var selected = $('input[name=number0]:checked').val();
+
+   if (selected == "Madrid") {
+     // if they picked crrect answer, in this case, zebra
+
+
+     $("#modal-launcher, #modal-background, #modal-close").show();
+   } else {
+     // if they picked nything not zebra
+     $("#modal-launcher, #modal-background, #modal-close").show();
+   }
+
+ });
 
 
 
-
-  //change for radio buttons!! not on click
   });
 
 
