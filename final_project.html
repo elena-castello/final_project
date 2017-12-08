@@ -22,7 +22,7 @@
 
  <div id="wrapper">
 <h1>The Traveler's Test</h1>
-<h4>
+<h3>
 Click on any one of the pins to learn about a different city around the world. Then, when you're ready, take the quiz! You might find that you're a traveling savant! Or, you might have to do some more exploring to take on the Traveler's Test! Best of luck, voyagers!</h4>
  <div id="mapid"></div>
 
@@ -51,6 +51,11 @@ for ( var i=0; i < places.length; i++ ) {
     <div class="form-check"><label><input type="radio" name="number0" value="Paris"> Paris</label></div>
     <div class="form-check"><label><input type="radio" name="number0" value="Madrid"> Madrid</label></div>
     <div class="form-check"><label><input type="radio" name="number0" value="Miami"> Miami</label></div>
+		<button id="modal-launcher" class="checkButton">Check Answer</button>
+		<div id="modal-background"></div>
+		<div id="modal-content"><img src="images/madrid.jpg" alt="Puerta del Sol" width ="480" height="360">
+		    <button id="modal-close" class="myButton">Next Question!</button>
+		</div>
 </div>
 </div>
 
@@ -61,6 +66,11 @@ for ( var i=0; i < places.length; i++ ) {
     <div class="form-check"><label><input type="radio" name="number1" value="It is a mosque."> It is a mosque.</label></div>
     <div class="form-check"><label><input type="radio" name="number1" value="It is a tomb."> It is a tomb.</label></div>
     <div class="form-check"><label><input type="radio" name="number1" value="It is a museum."> It is a museum.</label></div>
+		<button id="modal-launcher" class="checkButton">Check Answer</button>
+		<div id="modal-background"></div>
+		<div id="modal-content"><img src="images/india.jpg" alt="Taj Mahal" width ="483" height="362">
+		    <button id="modal-close" class="myButton">Next Question!</button>
+		</div>
 </div>
 </div>
 
@@ -71,6 +81,11 @@ for ( var i=0; i < places.length; i++ ) {
     <div class="form-check"><label><input type="radio" name="number3" value="Miami"> Miami</label></div>
     <div class="form-check"><label><input type="radio" name="number3" value="Jacksonville"> Jacksonville</label></div>
     <div class="form-check"><label><input type="radio" name="number3" value="Los Angeles"> Los Angeles</label></div>
+		<button id="modal-launcher" class="checkButton">Check Answer</button>
+		<div id="modal-background"></div>
+		<div id="modal-content"><img src="images/jax_james_willamor.jpg" alt="Puerta del Sol" width ="481" height="322">
+		    <button id="modal-close" class="myButton">Next Question!</button>
+		</div>
 </div>
 </div>
 
@@ -81,6 +96,11 @@ for ( var i=0; i < places.length; i++ ) {
     <div class="form-check"><label><input type="radio" name="number4" value="La Puerta del Sol"> La Puerta del Sol</label></div>
     <div class="form-check"><label><input type="radio" name="number4" value="Tiananmen Square"> Tiananmen Square</label></div>
     <div class="form-check"><label><input type="radio" name="number4" value="Plaza Mexico"> Plaza Mexico</label></div>
+		<button id="modal-launcher" class="checkButton">Check Answer</button>
+		<div id="modal-background"></div>
+		<div id="modal-content"><img src="images/mexico.jpg" alt="Puerta del Sol" width ="480" height="360">
+		    <button id="modal-close" class="myButton">Next Question!</button>
+		</div>
 </div>
 </div>
 
@@ -91,6 +111,11 @@ for ( var i=0; i < places.length; i++ ) {
     <div class="form-check"><label><input type="radio" name="number5" value="Dollars"> Dollars</label></div>
     <div class="form-check"><label><input type="radio" name="number5" value="Lira"> Lira</label></div>
     <div class="form-check"><label><input type="radio" name="number5" value="peso"> Peso</label></div>
+		<button id="modal-launcher" class="checkButton">Check Answer</button>
+		<div id="modal-background"></div>
+		<div id="modal-content"><img src="images/turkey.jpg" alt="Puerta del Sol" width ="428" height="192">
+		    <button id="modal-close" class="myButton">Next Question!</button>
+		</div>
 </div>
 </div>
 
@@ -101,6 +126,11 @@ for ( var i=0; i < places.length; i++ ) {
     <div class="form-check"><label><input type="radio" name="number6" value="Cape of Good Hope"> Cape of Good Hope</label></div>
     <div class="form-check"><label><input type="radio" name="number6" value="Cape Horn"> Cape Horn</label></div>
     <div class="form-check"><label><input type="radio" name="number6" value="Cape Agulhas"> Cape Agulhas</label></div>
+		<button id="modal-launcher" class="checkButton">Check Answer</button>
+		<div id="modal-background"></div>
+		<div id="modal-content"><img src="images/southafrica.jpg" alt="Puerta del Sol" width ="480" height="320">
+		    <button id="modal-close" class="myButton">Next Question!</button>
+		</div>
 </div>
 </div>
 
@@ -111,6 +141,11 @@ for ( var i=0; i < places.length; i++ ) {
     <div class="form-check"><label><input type="radio" name="number7" value="Rochester"> Rochester</label></div>
     <div class="form-check"><label><input type="radio" name="number7" value="Lancaster"> Lancaster</label></div>
     <div class="form-check"><label><input type="radio" name="number7" value="Buckingham"> Buckingham</label></div>
+		<button id="modal-launcher" class="checkButton">Check Answer</button>
+		<div id="modal-background"></div>
+		<div id="modal-content"><img src="images/london_Photo by Hugo Sousa on Unsplash.jpg" alt="Big Ben" width ="300" height="455">
+		    <button id="modal-close" class="myButton">Next Question!</button>
+		</div>
 </div>
 </div>
 
@@ -121,6 +156,11 @@ for ( var i=0; i < places.length; i++ ) {
     <div class="form-check"><label><input type="radio" name="number8" value="Sacrifice"> Sacrifice</label></div>
     <div class="form-check"><label><input type="radio" name="number8" value="The Emperor's permission"> The Emperor's permission</label></div>
     <div class="form-check"><label><input type="radio" name="number8" value="No one was allowed to enter the Forbidden City."> No one was allowed to enter the Forbidden City.</label></div>
+		<button id="modal-launcher" class="checkButton">Check Answer</button>
+		<div id="modal-background"></div>
+		<div id="modal-content"><img src="images/china.jpg" alt="The Forbidden City" width ="480" height="320">
+		    <button id="modal-close" class="myButton">Next Question!</button>
+		</div>
 </div>
 </div>
 
@@ -131,6 +171,11 @@ for ( var i=0; i < places.length; i++ ) {
     <div class="form-check"><label><input type="radio" name="number9" value="Limestone"> Limestone</label></div>
     <div class="form-check"><label><input type="radio" name="number9" value="Brick"> Brick</label></div>
     <div class="form-check"><label><input type="radio" name="number9" value="Alabaster"> Alabaster</label></div>
+		<button id="modal-launcher" class="checkButton">Check Answer</button>
+		<div id="modal-background"></div>
+		<div id="modal-content"><img src="images/israel_david-rodrigo-.jpg" alt="Puerta del Sol" width ="461" height="307">
+		    <button id="modal-close" class="myButton">Next Question!</button>
+		</div>
 </div>
 </div>
 
@@ -141,6 +186,11 @@ for ( var i=0; i < places.length; i++ ) {
     <div class="form-check"><label><input type="radio" name="number10" value="Flossenburg"> Flossenburg</label></div>
     <div class="form-check"><label><input type="radio" name="number10" value="Auschwitz-Birkenau"> Auschwitz-Birkenau</label></div>
     <div class="form-check"><label><input type="radio" name="number10" value="Bergen-Belsen"> Bergen-Belsen</label></div>
+		<button id="modal-launcher" class="checkButton">Check Answer</button>
+		<div id="modal-background"></div>
+		<div id="modal-content"><img src="images/poland.jpg" alt="Puerta del Sol" width ="490" height="367">
+		    <button id="modal-close" class="myButton">Next Question!</button>
+		</div>
 </div>
 </div>
 
@@ -151,6 +201,11 @@ for ( var i=0; i < places.length; i++ ) {
     <div class="form-check"><label><input type="radio" name="number11" value="30"> 30</label></div>
     <div class="form-check"><label><input type="radio" name="number11" value="68"> 68</label></div>
     <div class="form-check"><label><input type="radio" name="number11" value="80"> 80</label></div>
+		<button id="modal-launcher" class="checkButton">Check Answer</button>
+		<div id="modal-background"></div>
+		<div id="modal-content"><img src="images/italy_david-grandmougin-.jpg" alt="Puerta del Sol" width ="462" height="308">
+		    <button id="modal-close" class="myButton">Next Question!</button>
+		</div>
 </div>
 </div>
 
@@ -161,17 +216,15 @@ for ( var i=0; i < places.length; i++ ) {
     <div class="form-check"><label><input type="radio" name="number12" value="100+"> 100+</label></div>
     <div class="form-check"><label><input type="radio" name="number12" value="200+"> 200+</label></div>
     <div class="form-check"><label><input type="radio" name="number12" value="300+"> 300+</label></div>
+		<button id="modal-launcher" class="checkButton">Check Answer</button>
+		<div id="modal-background"></div>
+		<div id="modal-content"><img src="images/brazil_davidson-luna.jpg" alt="Puerta del Sol" width ="280" height="420">
+		    <button id="modal-close" class="myButton">Next Question!</button>
+		</div>
 </div>
 </div>
 </div>
 
-
-<button id="modal-launcher">Check Answer</button>
-
-<div id="modal-background"></div>
-<div id="modal-content">
-    <button id="modal-close">Close Modal Window</button>
-</div>
 
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"

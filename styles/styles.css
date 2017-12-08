@@ -40,8 +40,8 @@ color: #2f2da8
 	cursor:pointer;
 	color:#ffffff;
 	font-family: 'Esteban', serif;;
-	font-size:13px;
-	padding:6px 24px;
+	font-size:15px;
+	padding:9px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #154682;
   margin: 9px;
@@ -65,7 +65,7 @@ color: #2f2da8
 
 #modal-background {
 		display: none;
-		position: fixed;
+		position: relative;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -100,10 +100,17 @@ color: #2f2da8
 
 #modal-background.active, #modal-content.active {
 		display: block;
-
 }
 
-h4 {
+#modal-close {
+	font-family: 'Esteban', serif;
+}
+
+#modal-luncher {
+font-family: 'Esteban', serif;
+}
+
+h3 {
 	font-family: 'Esteban', serif;
 	color: #2f2da8;
 	text-align: center;
@@ -116,4 +123,33 @@ font-family: 'Esteban', serif;
 .form-check {
 	font-family: 'Esteban', serif;
 	color: #2f2da8
+}
+
+
+.checkButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background-color:#89c403;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Esteban', serif;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
+	margin: 15px;
+}
+.myButton:hover {
+	background-color:#77a809;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
