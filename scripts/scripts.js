@@ -1,18 +1,18 @@
- // jQuery hide()/show() example with a switch statement
+// jQuery hide()/show() example with a switch statement
 
-$(document).ready(function() {
+$(document).ready(function () {
   $(".form-group").hide();
 
-  $(function(){
-    $("#modal-launcher, #modal-background, #modal-close").click(function () {
-      $("#modal-content,#modal-background").toggleClass("active");
-    });
-  });
+//  $(function(){
+//    $("#modal-launcher, #modal-background, #modal-close").click(function () {
+//      $("#modal-content,#modal-background").toggleClass("active");
+//    });
+//  });
 
   $( ".myButton" ).click(function() {
     // if ( $(this).parent().children(".form-group").is(':visible') ) {
       $(this).parent().children(".form-group").toggle();
-
+  });
 
  //$('#modal-content').click(function(){
    //if (madrid.checked) {
@@ -24,26 +24,23 @@ $(document).ready(function() {
 
 
 
- $("#checkButton").click(function() {
+ $(".checkButton").click(function() {
 
    var selected = $('input[name=number0]:checked').val();
 
-   if (selected == "Madrid") {
-     // if they picked crrect answer, in this case, zebra
-
-
-     $("#modal-launcher, #modal-background, #modal-close").show();
+   if (selected == "Right") {
+     $(this).parent().children("#modal-content").addClass("active");
+     $(this).parent().children("#modal-content2").removeClass("active");
    } else {
-     // if they picked nything not zebra
-     $("#modal-launcher, #modal-background, #modal-close").show();
+     $(this).parent().children("#modal-content").removeClass("active");
+     $(this).parent().children("#modal-content2").addClass("active");
    }
 
  });
 
-
-
-  });
-
+ $(".myButton").click(function() {
+     $(this).parent().removeClass("active");
+ });
 
 
 }); // end document ready

@@ -19,11 +19,12 @@
   <link rel = "stylesheet" href= "styles/styles.css">
 	</head>
 <body>
-
  <div id="wrapper">
 <h1>The Traveler's Test</h1>
+<h4>By: Elena Castello</h4>
 <h3>
 Click on any one of the pins to learn about a different city around the world. Then, when you're ready, take the quiz! You might find that you're a traveling savant! Or, you might have to do some more exploring to take on the Traveler's Test! Best of luck, voyagers!</h3>
+
  <div id="mapid"></div>
 
 
@@ -46,202 +47,242 @@ for ( var i=0; i < places.length; i++ ) {
 
 <h3>Click on each button to reveal the question.</h3>
 
-<div id="row">
-	<div id="column">
+
 <div id ="Spain">
 <button a href="#" class="myButton">What is the capital city of Spain?</button>
-<div class="form-group">
-    <div class="form-check"><label><input type="radio" name="number0" value="Barcelona"> Barcelona</label></div>
-    <div class="form-check"><label><input type="radio" name="number0" value="Paris"> Paris</label></div>
-    <div class="form-check"><label><input type="radio" name="number0" value="Madrid"> Madrid</label></div>
-    <div class="form-check"><label><input type="radio" name="number0" value="Miami"> Miami</label></div>
+    <div class="form-group">
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Barcelona</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Paris</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Right"> Madrid</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Miami</label></div>
 
-		<button id="modal-launcher" class="checkButton">Check Answer</button>
-		<div id="modal-background"></div>
-		<div id="modal-content"><img src="images/madrid.jpg" alt="Puerta del Sol" width ="480" height="360"><h2>Enhorabuena! (Congrats!)</h2>
-		    <button id="modal-close" class="myButton">Next Question!</button>
+            <button id="modal-launcher" class="checkButton">Check Answer</button>
+            <div id="modal-content"><img src="images/madrid.jpg" alt="Puerta del Sol" 	width ="480" height="360"><h2>Enhorabuena! (Congrats!)</h2>
+            <button id="modal-close" class="myButton">Next Question!</button>
+            </div>
+            <div id="modal-content2"><img src="images/madrid.jpg" alt="Puerta del Sol" width ="480" height="360"><h2>Intenta de Nuevo! (Try Again!)</h2>
+            <button id="modal-close2" class="myButton">Next Question!</button>
+            </div>
 
-		<button id="modal-launcher" class="checkButton">Check Answer</button>
-				<div id="modal-background2"></div>
-				<div id="modal-content"><img src="images/madrid.jpg" alt="Puerta del Sol" width ="480" height="360"><h2>Intenta de Nuevo! (Try Again!)</h2>
-				    <button id="modal-close2" class="myButton">Next Question!</button>
-
-		</div>
-</div>
+    </div>
 </div>
 
 <div id ="India">
 <button a href="#" class="myButton">What is the main purpose of the Taj Mahal?</button>
-<div class="form-group">
-    <div class="form-check"><label><input type="radio" name="number1" value="It is a palace."> It is a palace.</label></div>
-    <div class="form-check"><label><input type="radio" name="number1" value="It is a mosque."> It is a mosque.</label></div>
-    <div class="form-check"><label><input type="radio" name="number1" value="It is a tomb."> It is a tomb.</label></div>
-    <div class="form-check"><label><input type="radio" name="number1" value="It is a museum."> It is a museum.</label></div>
-		<button id="modal-launcher" class="checkButton">Check Answer</button>
-		<div id="modal-background"></div>
-		<div id="modal-content"><img src="images/india.jpg" alt="Taj Mahal" width ="483" height="362"><h2>ਮੁਬਾਰਕਾਂ! (Congrats!)</h2><h4>ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ (Try Again) :(</h4>
-		    <button id="modal-close" class="myButton">Next Question!</button>
-		</div>
-</div>
+    <div class="form-group">
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> It is a palace.</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> It is a mosque.</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Right"> It is a tomb.</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> It is a museum</label></div>
+
+            <button id="modal-launcher" class="checkButton">Check Answer</button>
+            <div id="modal-content"><img src="images/india.jpg" alt="Taj Mahal" width ="483" height="362"><h2>Eਮੁਬਾਰਕਾਂ! (Congrats!)</h2>
+            <button id="modal-close" class="myButton">Next Question!</button>
+            </div>
+            <div id="modal-content2"><img src="images/india.jpg" alt="Taj Mahal" width ="483" height="362"><h2>ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ (Try Again) :(</h2>
+            <button id="modal-close2" class="myButton">Next Question!</button>
+            </div>
+
+    </div>
 </div>
 
 <div id ="Florida">
-<button href="#" class="myButton">What is the largest city in the contiguous U.S. by area?</button>
-<div class="form-group">
-    <div class="form-check"><label><input type="radio" name="number3" value="New York"> New York</label></div>
-    <div class="form-check"><label><input type="radio" name="number3" value="Miami"> Miami</label></div>
-    <div class="form-check"><label><input type="radio" name="number3" value="Jacksonville"> Jacksonville</label></div>
-    <div class="form-check"><label><input type="radio" name="number3" value="Los Angeles"> Los Angeles</label></div>
-		<button id="modal-launcher" class="checkButton">Check Answer</button>
-		<div id="modal-background"></div>
-		<div id="modal-content"><img src="images/jax_james_willamor.jpg" alt="Puerta del Sol" width ="481" height="322"><h2>Congratulations!</h2><h4>Try again (Try Again) :(</h4>
-		    <button id="modal-close" class="myButton">Next Question!</button>
-		</div>
-</div>
+<button a href="#" class="myButton">What is the largest city in the contiguous U.S. by area?</button>
+    <div class="form-group">
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> New York</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Miami</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Right"> Jacksonville</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Los Angeles</label></div>
+
+            <button id="modal-launcher" class="checkButton">Check Answer</button>
+            <div id="modal-content"><img src="images/jax_james_willamor.jpg" alt="Jacksonville" width ="481" height="322"><h2>Congratulations!</h2>
+            <button id="modal-close" class="myButton">Next Question!</button>
+            </div>
+            <div id="modal-content2"><img src="images/jax_james_willamor.jpg" alt="Jacksonville" width ="481" height="322"><h2>Try Again :(</h2>
+            <button id="modal-close2" class="myButton">Next Question!</button>
+            </div>
+
+    </div>
 </div>
 
 <div id ="Mexico">
-<button href="#" class="myButton">What is the main square in Mexico City called?</button>
-<div class="form-group">
-    <div class="form-check"><label><input type="radio" name="number4" value="El Zocalo"> El Zocalo</label></div>
-    <div class="form-check"><label><input type="radio" name="number4" value="La Puerta del Sol"> La Puerta del Sol</label></div>
-    <div class="form-check"><label><input type="radio" name="number4" value="Tiananmen Square"> Tiananmen Square</label></div>
-    <div class="form-check"><label><input type="radio" name="number4" value="Plaza Mexico"> Plaza Mexico</label></div>
-		<button id="modal-launcher" class="checkButton">Check Answer</button>
-		<div id="modal-background"></div>
-		<div id="modal-content"><img src="images/mexico.jpg" alt="Puerta del Sol" width ="480" height="360"><h2>Enhorabuena! (Congrats!)</h2><h4>Intenta de nuevo (Try Again) :(</h4>
-		    <button id="modal-close" class="myButton">Next Question!</button>
-		</div>
-</div>
+<button a href="#" class="myButton">What is the main square in Mexico City called?</button>
+    <div class="form-group">
+        <div class="form-check"><label><input type="radio" name="number0" value="Right"> El Zocalo</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> La  Puerta del Sol</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Tiannanmen Square</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Plaza Mexico</label></div>
+
+            <button id="modal-launcher" class="checkButton">Check Answer</button>
+            <div id="modal-content"><img src="images/mexico.jpg" alt="Mexico" width ="480" height="360"><h2>Enhorabuena! (Congratulations!)</h2>
+            <button id="modal-close" class="myButton">Next Question!</button>
+            </div>
+            <div id="modal-content2"><img src="images/mexico.jpg" alt="Mexico" width ="480" height="360"><h2>Intenta de Nuevo (Try Again) :(</h2>
+            <button id="modal-close2" class="myButton">Next Question!</button>
+            </div>
+
+    </div>
 </div>
 
 <div id ="Turkey">
-<button href="#" class="myButton">What is the official currency of Turkey?</button>
-<div class="form-group">
-    <div class="form-check"><label><input type="radio" name="number5" value="Euro"> Euro</label></div>
-    <div class="form-check"><label><input type="radio" name="number5" value="Dollars"> Dollars</label></div>
-    <div class="form-check"><label><input type="radio" name="number5" value="Lira"> Lira</label></div>
-    <div class="form-check"><label><input type="radio" name="number5" value="peso"> Peso</label></div>
-		<button id="modal-launcher" class="checkButton">Check Answer</button>
-		<div id="modal-background"></div>
-		<div id="modal-content"><img src="images/turkey.jpg" alt="Puerta del Sol" width ="428" height="192"><h2>Tebrik ederiz! (Congrats!)</h2><h4>Tekrar deneyin (Try Again) :(</h4>
-		    <button id="modal-close" class="myButton">Next Question!</button>
-		</div>
-</div>
+<button a href="#" class="myButton">What is the official currency of Turkey?</button>
+    <div class="form-group">
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Peso</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Dollar</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Euro</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Right"> Lira</label></div>
+
+            <button id="modal-launcher" class="checkButton">Check Answer</button>
+            <div id="modal-content"><img src="images/turkey.jpg" alt="Puerta del Sol" width ="428" height="192"><h2>Tebrik ederiz!  (Congratulations!)</h2>
+            <button id="modal-close" class="myButton">Next Question!</button>
+            </div>
+            <div id="modal-content2"><img src="images/turkey.jpg" alt="Puerta del Sol" width ="428" height="192"><h2>Tekrar deneyin (Try Again) :(</h2>
+            <button id="modal-close2" class="myButton">Next Question!</button>
+            </div>
+
+    </div>
 </div>
 
 <div id ="SouthAfrica">
-<button href="#" class="myButton">What is the southernmost point of the African continent?</button>
-<div class="form-group">
-    <div class="form-check"><label><input type="radio" name="number6" value="Strait of Magellan"> Strait of Magellan</label></div>
-    <div class="form-check"><label><input type="radio" name="number6" value="Cape of Good Hope"> Cape of Good Hope</label></div>
-    <div class="form-check"><label><input type="radio" name="number6" value="Cape Horn"> Cape Horn</label></div>
-    <div class="form-check"><label><input type="radio" name="number6" value="Cape Agulhas"> Cape Agulhas</label></div>
-		<button id="modal-launcher" class="checkButton">Check Answer</button>
-		<div id="modal-background"></div>
-		<div id="modal-content"><img src="images/southafrica.jpg" alt="Puerta del Sol" width ="480" height="320"><h2>Baie geluk! (Congrats!)</h2><h4>Probeer weer (Try Again) :(</h4>
-		    <button id="modal-close" class="myButton">Next Question!</button>
-		</div>
-</div>
+<button a href="#" class="myButton">WWhat is the southernmost point of the African continent?</button>
+    <div class="form-group">
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Strait of Magellan</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Cape of Good Hope</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Cape Horn</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Right"> Cape Agulhas</label></div>
+
+            <button id="modal-launcher" class="checkButton">Check Answer</button>
+            <div id="modal-content"><img src="images/southafrica.jpg" alt="South Africa" width ="480" height="320"><h2>Baie geluk! (Congrats!)</h2>
+            <button id="modal-close" class="myButton">Next Question!</button>
+            </div>
+            <div id="modal-content2"><img src="images/southafrica.jpg" alt="South Africa" width ="480" height="320"><h2>Probeer weer (Try Again) :(</h2>
+            <button id="modal-close2" class="myButton">Next Question!</button>
+            </div>
+
+    </div>
 </div>
 
 <div id ="England">
-<button href="#" class="myButton">Which castle is the oldest and longest-inhabited in the world?</button>
-<div class="form-group">
-    <div class="form-check"><label><input type="radio" name="number7" value="Windsor"> Windsor</label></div>
-    <div class="form-check"><label><input type="radio" name="number7" value="Rochester"> Rochester</label></div>
-    <div class="form-check"><label><input type="radio" name="number7" value="Lancaster"> Lancaster</label></div>
-    <div class="form-check"><label><input type="radio" name="number7" value="Buckingham"> Buckingham</label></div>
-		<button id="modal-launcher" class="checkButton">Check Answer</button>
-		<div id="modal-background"></div>
-		<div id="modal-content"><img src="images/london_Photo by Hugo Sousa on Unsplash.jpg" alt="Big Ben" width ="300" height="455"><h2>Congratulations! (Congrats!)</h2><h4>Try again (Try Again) :(</h4>
-		    <button id="modal-close" class="myButton">Next Question!</button>
-		</div>
-</div>
+<button a href="#" class="myButton">Which castle is the oldest and longest-inhabited in the world?</button>
+    <div class="form-group">
+        <div class="form-check"><label><input type="radio" name="number0" value="Right"> Windsor</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Rochester</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Lancaster</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Buckingham</label></div>
+
+            <button id="modal-launcher" class="checkButton">Check Answer</button>
+            <div id="modal-content"><img src="images/london_Photo by Hugo Sousa on Unsplash.jpg" alt="Big Ben" width ="300" height="455"><h2>Congratulations! (Congrats!)</h2>
+            <button id="modal-close" class="myButton">Next Question!</button>
+            </div>
+            <div id="modal-content2"><img src="images/london_Photo by Hugo Sousa on Unsplash.jpg" alt="Big Ben" width ="300" height="455"><h2>Try again (Try Again) :(</h2>
+            <button id="modal-close2" class="myButton">Next Question!</button>
+            </div>
+
+    </div>
 </div>
 
 <div id ="China">
-<button href="#" class="myButton">What was required to enter the Forbidden City?</button>
-<div class="form-group">
-    <div class="form-check"><label><input type="radio" name="number8" value="Prayers to the gods"> Prayers to the gods</label></div>
-    <div class="form-check"><label><input type="radio" name="number8" value="Sacrifice"> Sacrifice</label></div>
-    <div class="form-check"><label><input type="radio" name="number8" value="The Emperor's permission"> The Emperor's permission</label></div>
-    <div class="form-check"><label><input type="radio" name="number8" value="No one was allowed to enter the Forbidden City."> No one was allowed to enter the Forbidden City.</label></div>
-		<button id="modal-launcher" class="checkButton">Check Answer</button>
-		<div id="modal-background"></div>
-		<div id="modal-content"><img src="images/china.jpg" alt="The Forbidden City" width ="480" height="320"><h2>祝贺! (Congrats!)</h2><h4>再试一次 (Try Again) :(</h4>
-		    <button id="modal-close" class="myButton">Next Question!</button>
-		</div>
-</div>
+<button a href="#" class="myButton">What was required to enter the Forbidden City?</button>
+    <div class="form-group">
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Prayers to the Gods</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Sacrifice</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Right"> The Emperor's Permission</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> No one was allowed to enter</label></div>
+
+            <button id="modal-launcher" class="checkButton">Check Answer</button>
+            <div id="modal-content"><img src="images/china.jpg" alt="The Forbidden City" width ="480" height="320"><h2>祝贺! (Congrats!)</h2>
+            <button id="modal-close" class="myButton">Next Question!</button>
+            </div>
+            <div id="modal-content2"><img src="images/china.jpg" alt="The Forbidden City" width ="480" height="320"><h2>再试一次 (Try Again) :(</h2>
+            <button id="modal-close2" class="myButton">Next Question!</button>
+            </div>
+
+    </div>
 </div>
 
 <div id ="Israel">
-<button href="#" class="myButton">What is the Western Wall made of?</button>
-<div class="form-group">
-    <div class="form-check"><label><input type="radio" name="number9" value="Marble"> Marble</label></div>
-    <div class="form-check"><label><input type="radio" name="number9" value="Limestone"> Limestone</label></div>
-    <div class="form-check"><label><input type="radio" name="number9" value="Brick"> Brick</label></div>
-    <div class="form-check"><label><input type="radio" name="number9" value="Alabaster"> Alabaster</label></div>
-		<button id="modal-launcher" class="checkButton">Check Answer</button>
-		<div id="modal-background"></div>
-		<div id="modal-content"><img src="images/israel_david-rodrigo-.jpg" alt="Puerta del Sol" width ="461" height="307"><h2>מזל טוב! (Congrats!)</h2><h4>נסה שוב (Try Again) :(</h4>
-		    <button id="modal-close" class="myButton">Next Question!</button>
-		</div>
-</div>
+<button a href="#" class="myButton">What is the Western Wall made of?</button>
+    <div class="form-group">
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Marble</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Right"> Limestone</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Brick</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Alabaster</label></div>
+
+            <button id="modal-launcher" class="checkButton">Check Answer</button>
+            <div id="modal-content"><img src="images/israel_david-rodrigo-.jpg" alt="Israel" width ="461" height="307"><h2>מזל טוב! (Congrats!)</h2>
+            <button id="modal-close" class="myButton">Next Question!</button>
+            </div>
+            <div id="modal-content2"><img src="images/israel_david-rodrigo-.jpg" alt="Israel" width ="461" height="307"><h2>נסה שוב (Try Again) :(</h2>
+            <button id="modal-close2" class="myButton">Next Question!</button>
+            </div>
+
+    </div>
 </div>
 
 <div id ="Poland">
-<button href="#" class="myButton">Which concentration camp from WWII is closest to the city of Krakow?</button>
-<div class="form-group">
-    <div class="form-check"><label><input type="radio" name="number10" value="Chelmno"> Chelmno</label></div>
-    <div class="form-check"><label><input type="radio" name="number10" value="Flossenburg"> Flossenburg</label></div>
-    <div class="form-check"><label><input type="radio" name="number10" value="Auschwitz-Birkenau"> Auschwitz-Birkenau</label></div>
-    <div class="form-check"><label><input type="radio" name="number10" value="Bergen-Belsen"> Bergen-Belsen</label></div>
-		<button id="modal-launcher" class="checkButton">Check Answer</button>
-		<div id="modal-background"></div>
-		<div id="modal-content"><img src="images/poland.jpg" alt="Puerta del Sol" width ="490" height="367"><h2>Gratulacje! (Congrats!)</h2><h4>Spróbuj ponownie (Try Again) :(</h4>
-		    <button id="modal-close" class="myButton">Next Question!</button>
-		</div>
-</div>
+<button a href="#" class="myButton">Which concentration camp from WWII is closest to the city of Krakow?</button>
+    <div class="form-group">
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Chelmno</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Flossenburg</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Right"> Auschwitz-Birkenau</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> Bergen-Belsen</label></div>
+
+            <button id="modal-launcher" class="checkButton">Check Answer</button>
+            <div id="modal-content"><img src="images/poland.jpg" alt="Poland" width ="490" height="367"><h2>Gratulacje! (Congrats!)</h2>
+            <button id="modal-close" class="myButton">Next Question!</button>
+            </div>
+            <div id="modal-content2"><img src="images/poland.jpg" alt="Poland" width ="490" height="367"><h2>Spróbuj ponownie (Try Again) :(</h2>
+            <button id="modal-close2" class="myButton">Next Question!</button>
+            </div>
+
+    </div>
 </div>
 
 <div id ="Rome">
-<button href="#" class="myButton">How many entrances does the Colosseum have?</button>
-<div class="form-group">
-    <div class="form-check"><label><input type="radio" name="number11" value="15"> 15</label></div>
-    <div class="form-check"><label><input type="radio" name="number11" value="30"> 30</label></div>
-    <div class="form-check"><label><input type="radio" name="number11" value="68"> 68</label></div>
-    <div class="form-check"><label><input type="radio" name="number11" value="80"> 80</label></div>
-		<button id="modal-launcher" class="checkButton">Check Answer</button>
-		<div id="modal-background"></div>
-		<div id="modal-content"><img src="images/italy_david-grandmougin-.jpg" alt="Puerta del Sol" width ="462" height="308"><h2>Congratulazioni! (Congrats!) </h2><h4>Riprova (Try Again) :(</h4>
-		    <button id="modal-close" class="myButton">Next Question!</button>
-		</div>
-</div>
+    <button a href="#" class="myButton">How many entrances does the Colosseum have?</button>
+    <div class="form-group">
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> 15</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> 30</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> 68</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Right"> 80</label></div>
+
+            <button id="modal-launcher" class="checkButton">Check Answer</button>
+            <div id="modal-content"><img src="images/italy_david-grandmougin-.jpg" alt="Rome" width ="462" height="308"><h2>Congratulazioni! (Congrats!) </h2>
+            <button id="modal-close" class="myButton">Next Question!</button>
+            </div>
+            <div id="modal-content2"><img src="images/italy_david-grandmougin-.jpg" alt="Rome" width ="462" height="308"><h2>Riprova (Try Again) :(</h2>
+            <button id="modal-close2" class="myButton">Next Question!</button>
+            </div>
+
+    </div>
 </div>
 
 <div id ="Brazil">
-<button href="#" class="myButton">How many days does it rain in Sao Paolo per year?</button>
-<div class="form-group">
-    <div class="form-check"><label><input type="radio" name="number12" value="0-50"> 0-50</label></div>
-    <div class="form-check"><label><input type="radio" name="number12" value="100+"> 100+</label></div>
-    <div class="form-check"><label><input type="radio" name="number12" value="200+"> 200+</label></div>
-    <div class="form-check"><label><input type="radio" name="number12" value="300+"> 300+</label></div>
-		<button id="modal-launcher" class="checkButton">Check Answer</button>
-		<div id="modal-background"></div>
-		<div id="modal-content"><img src="images/brazil_davidson-luna.jpg" alt="Puerta del Sol" width ="260" height="380"><h2>
-Parabéns! (Congrats!)</h2><h4>Tente novamente (Try Again) :(</h4>
-		    <button id="modal-close" class="myButton">Next Question!</button>
-		</div>
-</div>
-</div>
+    <button a href="#" class="myButton">How many days does it rain in Sao Paolo per year?</button>
+    <div class="form-group">
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> 0-50</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Right"> 100+</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> 200+</label></div>
+        <div class="form-check"><label><input type="radio" name="number0" value="Wrong"> 300+</label></div>
+
+            <button id="modal-launcher" class="checkButton">Check Answer</button>
+            <div id="modal-content"><img src="images/brazil_davidson-luna.jpg" alt="Brazil" width ="260" height="380"
+><h2>Parabéns! (Congrats!) </h2>
+            <button id="modal-close" class="myButton">Next Question!</button>
+            </div>
+            <div id="modal-content2"><img src="images/brazil_davidson-luna.jpg" alt="Brazil" width ="260" height="380"
+><h2>Tente novamente (Try Again) :(</h2>
+            <button id="modal-close2" class="myButton">Next Question!</button>
+            </div>
+
+    </div>
 </div>
 </div>
 
 <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
 
 <script src="scripts/scripts.js"></script>
 

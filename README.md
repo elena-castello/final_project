@@ -23,4 +23,15 @@ I input the answers for the questions and made them radio buttons. Then, I tried
 
 I will have a box pop up when an answer is clicked, and either celebrate or say "try again" in the language of the country based on the answer that's clicked. I will add CSS and make it responsive, and finish adding the jQuery and Javascript to make it beautiful, with fonts and colors and other visually appealing things. If I can make it happen, I'll make the background image of the box that pops up the pictures from each country that I've added to my images folder.
 
-*Note, I know the HTML doesn't quite validate because of some of the mistakes in the buttons, but they do work. I'm not sure if this is actually a real issue or not, but I don't know how else to test that.
+*Note, I know the HTML doesn't quite validate because of some of the mistakes in the buttons, but they do work. I'm not sure if this is actually a real issue or not, but I don't know how else to test that.*
+
+
+# Week Three:
+
+This week was a big week all around. I added a descriptive paragraph to introduce my project, and a byline. I did all my CSS to beautify my project: I added a background color, Google fonts, and changed all of the text in the pins, the questions and answers to fit the new font style.
+
+Then, building from last week's blue buttons to drop down with the radio buttons (the answers), I created a "check answer" button. With that, I made it a modal. I made the function open into the modal box when clicked so that the photos I uploaded last week would show, one for each respective country. Then, I created a bit of text in each language (using Google Translate), and wrote "Congratulations" and "Try Again" in each language that relates to the country. So then, when the person selects the answer, one of two modals would come up. At first, I had two different heading styles in the same button, h2 for a correct answer, and h4 for an incorrect answer. When I tried (and ultimately failed), I tried instead to create two of the same modal, and then call and "if-else" function to launch the "congrats" modal when the correct answer is chosen and to launch the "try again" modal when any other answer is chosen.
+
+Then, I tried using the JS Fiddle to make a function that would open one modal at a time, and after once again failing at that several (hundred) times, I looked elsewhere. I finally figured out how to make them open using the children, similar to my first button set, and finally got the modals to open and close on the correct answer and show the correct phrase. I then had to redo all the information for all the buttons, with a new value, which was now "right" or "wrong" instead of which actual answer was clicked.
+
+Finally, I finished up all the CSS and colors, again, making last-minute changes. I tried to make the modals responsive, using the media query, and almost got it to work. The map, the buttons and all the rest of the items are responsive, but at small screen sizes, the photos are too large. 
